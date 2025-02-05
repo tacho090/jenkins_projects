@@ -1,5 +1,10 @@
 # jenkins_projects
 
+### Quick start
+
+1. Run `docker_build_jenkins.sh`
+
+
 ### How to Expose daemon on tcp://localhost:2375 without TLS
 
 1. Override default configuration for docker daemon default port by opening this file:
@@ -19,3 +24,8 @@ sudo systemctl restart docker.service
 ````
 4. Update configuration in docker cloud configuration in Jenkins and test connection
 ![docker-cloud-configuration.png](docker-cloud-configuration.png)
+
+
+### Configuration for DOTNETCORE labeled agent in Jenkins
+
+![dotnetcore-agent-template.png](dotnetcore-agent-template.png)
